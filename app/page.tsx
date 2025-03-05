@@ -14,10 +14,10 @@ export default function Home() {
       <AnimatedBackground />
       <main className="relative z-10 min-h-screen bg-background text-foreground">
         <Hero />
-        <About />
         <FeaturedSkills />
-        <Skills />
+        <About />
         <Projects />
+        <Skills />
         <Testimonials />
         <CallToAction />
         <Footer />
