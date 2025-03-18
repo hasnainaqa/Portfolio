@@ -1,40 +1,35 @@
-import type { MetadataRoute } from "next"
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://hasnainafzal.vercel.app/"
-  const currentDate = new Date().toISOString()
-
   return [
     {
-      url: baseUrl,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 1,
+      url: "https://hasnainafzal.vercel.app/",
+      lastModified: new Date().toISOString(),
     },
     {
-      url: `${baseUrl}/about`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
+      url: "https://hasnainafzal.vercel.app/about",
+      lastModified: new Date().toISOString(),
     },
     {
-      url: `${baseUrl}/skills`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
+      url: "https://hasnainafzal.vercel.app/services",
+      lastModified: new Date().toISOString(),
     },
     {
-      url: `${baseUrl}/projects`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.9,
+      url: "https://hasnainafzal.vercel.app/admission-process",
+      lastModified: new Date().toISOString(),
     },
     {
-      url: `${baseUrl}/contact`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
+      url: "https://hasnainafzal.vercel.app/contact",
+      lastModified: new Date().toISOString(),
     },
-  ]
+  ];
 }
 
+export const headers = () => {
+  return {
+    "Content-Type": "application/xml",
+    "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+    Pragma: "no-cache",
+    Expires: "0",
+  };
+};
