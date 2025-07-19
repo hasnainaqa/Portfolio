@@ -17,9 +17,9 @@ const skills = [
   { name: "Next.js", level: 85, category: "frontend" },
   { name: "Tailwind CSS", level: 80, category: "frontend" },
   { name: "shadcn/ui", level: 75, category: "frontend" },
-  { name: "Framer Motion", level: 70, category: "frontend" },
-  { name: "Responsive Design", level: 85, category: "frontend" },
-  { name: "Form Libraries (React Hook Form)", level: 70, category: "frontend" },
+  // { name: "Framer Motion", level: 70, category: "frontend" },
+  // { name: "Responsive Design", level: 85, category: "frontend" },
+  // { name: "Form Libraries (React Hook Form)", level: 70, category: "frontend" },
   { name: "API Integration (REST )", level: 75, category: "frontend" },
   
   { name: "Node.js", level: 70, category: "backend" },
